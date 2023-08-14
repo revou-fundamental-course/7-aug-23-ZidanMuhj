@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>KALKULATOR SEGITIGA</title>
-    <script src="./js/index.js"></script>
 </head>
 <body>
     <header>
@@ -19,5 +18,18 @@
      <label for="">Tinggi Segitiga</label><br>
      <input type="number" id="tinggi"><br>
      <button id="hitung">Hitung</button>
+     <div id="output"></div>
+     <script>
+        const alas = document.getElementById('alas')
+        const tinggi = document.getElementById('tinggi')
+        const hitung = document.getElementById('hitung') 
+        const output = document.getElementById('output') 
+        hitung.addEventListener('click', function(){
+         let a = alas.value
+         let t = tinggi.value
+         let l = 0.5*a*t
+         output.innerHTML = `Luas Segitiga dari alas ${a} dan tinggi ${t} adalah ${l} cm2`
+})
+     </script>
 </body>
 </html>

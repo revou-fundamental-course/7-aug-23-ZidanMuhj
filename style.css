@@ -1,22 +1,9 @@
-body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-
-header {
+h1 {
     background-color: #8294C4;
-    color: white;
     text-align: center;
     margin-left: 100px;
     margin-right: 100px;
     border-radius: 10px;
-}
-
-.input-section {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-left: 50px;
 }
 
 label {
@@ -25,7 +12,7 @@ label {
     font-size: 16px;
     font-weight: bold;
     color: #146C94;
-    margin-top: 10px;
+    margin-top: 50px;
 }
 
 input {
@@ -34,10 +21,8 @@ input {
     border-radius: 10px;
     font-size: 16px;
     outline: none;
-}
-
-input:focus {
-    border-color: #146C94;
+    display: flex;
+    align-items: center;
 }
 
 button {
@@ -54,11 +39,6 @@ button {
     background-color: #6C9BCF;
 }
 
-button:hover {
-    background-color:#146C94;
-}
-
-button:active {
-    transform: translateY(1px);
-    background-color: #8294C4;
+output {
+    text-align: center;
 }
